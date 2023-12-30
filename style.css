@@ -1,9 +1,16 @@
 :root {
-    --amazing-color--: #FED136;
-    --gtext-font: 'Montserrat', sans-serif;
-    --slab-font: 'Roboto Slab', serif;
-    --gtextb-font: 'Montserrat', sans-serif;
+    --amazing-color--: #fed136;
+    --gtext-font: "Montserrat", sans-serif;
+    --slab-font: "Roboto Slab", serif;
+    --gtextb-font: "Montserrat", sans-serif;
+    --DBG-color--: #222222;
+    --formtxt-color--: #bbbbbb;
+}
 
+.container {
+    width: 934px;
+    margin: 0 auto;
+    /* outline: black solid 2px; */
 }
 
 header {
@@ -12,17 +19,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-.container {
-    width: 934px;
-    margin: 0 auto;
-
-}
-
-
-
-
 
 .logo-link {
     display: block;
@@ -33,11 +29,11 @@ header {
 .h1 {
     font-family: var(--gtextb-font);
     text-transform: uppercase;
+    display: flex;
     text-align: center;
-
-
+    justify-content: center;
+    margin-bottom: 87.5px;
 }
-
 
 .list {
     list-style: none;
@@ -48,83 +44,140 @@ header {
     line-height: 41px;
     display: flex;
 
-
 }
 
 .list-item {
     margin: 10px;
 }
 
-
-
-.services-type {
+.service_list {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.service_type {
     width: 274px;
     margin: 0 auto;
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-
-.services-list {
-    display: flex;
-
-}
-
-
-
-.pharograph {
+.paragraph {
     text-align: center;
-}
-
-.bg-first {
-    background-color: #222222;
-    padding-top: 92px;
-    padding-bottom: 115px;
+    font-family: var(--slab-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .item-title {
+    font-family: var(--gtext-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
     text-align: center;
 }
 
-
-
-.item-logo {
+.icon {
     margin: 0 auto;
     display: block;
 }
+
 .img-wrap {
     height: 70px;
     width: 70px;
-    border: 4px solid var(--amazing-color--);
+    border: 3px solid var(--amazing-color--);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.headtxt {
-    color: #FFFFFF;
-    font-size: 40px;
-    font-family: var(--gtext-font);
-    font-weight: 700;        
+
+.contacts_section {
+    background-color: var(--DBG-color--);
+    padding-top: 92px;
+    padding-bottom: 115px;
+}
+
+.title-us {
+    color: white;
     text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 116px;
 }
-.ancfirst {
-    width: 455px;
-    height: 50px;
-    display: block;
-    margin-bottom: 28px;
-}
-.ancsecond {
-    width: 450px;
-    height: 212px;
-}
-.formdraft {
+
+.form-all {
     display: flex;
     justify-content: space-between;
-    
+    gap: 27px;
+}
+
+.form-left {
+    width: 455px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    gap: 26px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    font-family: var(--gtext-font);
+    padding-left: 20px;
+}
+
+.message {
+    width: 458px;
+    height: 200px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    font-family: var(--gtext-font);
+    padding-left: 20px;
+    padding-top: 14px;
+}
+
+
+.button {
+    text-align: center;
+}
+
+.button_txt {
+    color: #ffff;
+    background-color: #fed136;
+    text-align: center;
+    font-family: var(--gtextb-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 7px;
+    width: 242px;
+    height: 68px;
+    border: 1px solid var(--DBG-color--);
+}
+
+.form-left::placeholder {
+    color: var(--formtxt-color--);
+}
+
+.message::placeholder {
+    color: var(--formtxt-color--);
 }
