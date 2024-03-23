@@ -181,3 +181,50 @@ header {
 .message::placeholder {
     color: var(--formtxt-color--);
 }
+
+
+/* animate.style */
+
+.my-element:hover {
+    display: inline-block;
+    /* margin: 0 0.5rem; */
+  
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }
+
+
+  /* animista.net */
+
+  .text-focus-in {
+	-webkit-animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;	
+    animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
